@@ -1,0 +1,27 @@
+{
+  "enabled": true,
+  "title": "My first dashboard",
+  "titleVisible": true,
+  "description": "My first dashboard description goes here",
+
+  "layout": {
+      "titleVisible": false,
+      "title": "My first dashboard",
+      "customJS" : ["jquery.peity.js"],
+      "widgets" : [
+          {"row" : 1, "col" : 1, "width" : 4, "height" : 2, "widget" : "freemem",   "job" : "freemem",     "config": "freemem-config"},
+          {"row" : 2, "col" : 1, "width" : 4, "height" : 2, "widget" : "gauge",  "job" : "freemem2",     "config": "gauge-config"}
+      ]
+  },
+
+  "config" : {
+
+    "gauge-config" : {
+          "interval" : 1000
+    },
+
+    "freemem-config" : {
+        "interval" : 1000
+    }
+  }
+}
